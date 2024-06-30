@@ -25,6 +25,7 @@ function App() {
           poster:res.images.secure_base_url+"original",
           profile:res.images.secure_base_url+"original",
         }
+      console.log(url.backdrop, "url backdrop in app js");
         dispatch(getApiConfiguration(url));
         
       })
