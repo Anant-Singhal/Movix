@@ -8,7 +8,7 @@ import ContentWrapper from '../../../components/contentWrapper/ContentWrapper';
 const HeroBanner = () => {
   const [background,setBackground]  = useState("");
   const [query, setQuery] = useState("");
-  const url = useSelector(state => state.home.url);
+  const { url }= useSelector( (state) => state.home);
   const navigate = useNavigate();
   const {data,loading} = useFetch("/movie/upcoming");
   useEffect(()=>{
